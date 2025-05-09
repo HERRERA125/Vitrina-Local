@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artesanías Locales</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="/Vitrina/js/main.js"></script>
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  </head>
+
+  <body>
+    <header>
+          <h1>Artesanos Unidos</h1>
+          <nav>
+            <a href="index.html">Inicio</a>
+            <a href="postulate.html">Postúlate</a> 
+          </nav>
+          <button id="darkToggle" aria-label="Alternar modo oscuro">
+            <i class="fas fa-moon"></i>
+          </button>
+        </header>
+        <script>
+          const toggle = document.getElementById('darkToggle');
+          toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+          });
+        </script>                                                                                                                          
+    <main>
+      <div class="imagen-container">
+        <img src="img/fondo 1.jpg" alt="">
+      </div>
+      <section class="productos">
+        <h2>Principales productos</h2>
+        <div class="grid" id="productList">
+          <article class="producto">
+            <img src="img/Ceramica Vaso 2.jpg" alt="Cerámica artesanal" />
+            <h3>Vasos de Cerámica</h3>
+            <p>Categoría: Cerámica</p>
+            <p>Precio: $8.000</p>
+          </article>
+          <article class="producto">
+            <img src="img/Tapete textil.jpg" alt="Tela tejida a mano" />
+            <h3>Tapiz Textil</h3>
+            <p>Categoría: Textil</p>
+            <p>Precio: $15.000</p>
+          </article>
+          <article class="producto">
+            <img src="img/Lampara madera.jpg" alt="Lampara de Madera" />
+            <h3>Lámpara de madera</h3>
+            <p>Categoría: Madera</p>
+            <p>Precio: $25.000</p>
+          </article>
+        </div>
+        <br>
+      </section>
+      <section class="productos">
+        <h2>Nuestros productos</h2>
+        <div class="container"><h3>Cerámica</h3></div>
+        <br>
+        <div class="grid" id="productList">
+          <article class="producto">
+            <img src="img/ceramica1.jpg" alt="Cerámica artesanal" />
+            <h3>Escultura de dinosaurio sujetabotellas</h3>
+            <p>Precio: $70.000</p>
+          </article>
+          <article class="producto">
+            <img src="img/ceramica2.jpg" alt="Cerámica artesanal" />
+            <h3>Escultura de mono sujetabotellas</h3>
+            <p>Precio: $45.000</p>
+          </article>
+          <article class="producto">
+            <img src="img/ceramica3.jpeg" alt="Cerámica artesanal" />
+            <h3>Escultura de gato portajoyas</h3>
+            <p>Precio: $100.000</p>
+          </article>
+      </section>
+  <br>
+      <section class="productos">
+        <div class="container"><h3>Madera</h3></div>
+        <br>
+        <div class="grid" id="productList">
+          <article class="producto">
+            <img src="img/madera1.jpeg" alt="Cerámica artesanal" />
+            <h3>Centro de mesa con madera de roble</h3>
+            <p>Precio: $600.000</p>
+          </article>
+          <article class="producto">
+            <img src="img/madera2.jpeg" alt="Cerámica artesanal" />
+            <h3>Escultura de koala sujetacepillos</h3>
+            <p>Precio: $45.000</p>
+          </article>
+          <article class="producto">
+            <img src="img/madera4.jpeg" alt="Cerámica artesanal" />
+            <h3>Bandeja de buho con madera de adebul</h3>
+            <p>Precio: $450.000</p>
+          </article>
+      </section>
+      <br>
+      <section class="productos">
+        <div class="container"><h3>Tapicería</h3></div>
+        <br>
+        <div class="grid" id="productList">
+          <article class="producto">
+            <img src="img/tapiz1.jpeg" alt="Cerámica artesanal" />
+            <h3>Tapiz prado arcoíris</h3>
+            <p>Precio: $300.000</p>
+          </article>
+          <article class="producto">
+            <img src="img/tapiz2.jpeg" alt="Cerámica artesanal" />
+            <h3>Tapiz prado sunset</h3>
+            <p>Precio: $280.000</p>
+          </article>
+          <article class="producto">
+            <img src="img/tapiz4.jpeg" alt="Cerámica artesanal" />
+            <h3>Tapiz Sāfin</h3>
+            <p>Precio: $500.000</p>
+          </article>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-column logo-contact">
+          <img src="/img/Logo-Artesanos.png" alt="Logo Artesanos Unidos" class="logo">
+          <div class="contact-section">
+            <p><strong>Contáctanos</strong></p>
+            <p><a href="http://wa.me/+573137700791">📞Número: 3137700791</a></p>
+            <p>Lunes a sábado de 8am a 8pm</p>
+            <p>Domingos y festivos de 8am a 6pm</p>
+            <p>✉️ contactanos@artesanosunidos.com</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>NUESTRAS ARTESANÍAS</h4>
+          <ul>
+            <li><a href="#">Tapicería</a></li>
+            <li><a href="#">Maderería</a></li>
+            <li><a href="#">Cerámica</a></li>
+          </ul>
+        </div> 
+        <div class="footer-column">
+          <h4>ARTÍCULOS DE INTERÉS</h4>
+          <ul>
+            <li><a href="#">Esculturas</a></li>
+            <li><a href="#">Centros de Mesa</a></li>
+            <li><a href="#">Tapices</a></li>
+          </ul>
+        </div> 
+        <div class="footer-column">
+          <h4>ACERCA DE NOSOTROS</h4>
+          <ul>
+            <li><a href="#">Contáctenos</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política Tratamientos de datos</a></li>
+            <li><a href="#">Promociones</a></li>
+          </ul>
+        </div>
+      </div> <!-- Cierre que faltaba -->
+      <div class="contenedor-footer">
+        <p>© 2025 Artesanos Unidos Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

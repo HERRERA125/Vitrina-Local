@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postula tu Producto</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script defer src="js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Postula tu Producto</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="postulate.html">Postúlate</a>
+      </nav>
+      <button id="darkToggle" aria-label="Alternar modo oscuro">
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="formulario">
+        <h2>Formulario de Postulación</h2>
+        <form id="postulacionForm">
+          <label for="nombre">Nombre del Producto:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" name="precio" required />
+
+          <label for="categoria">Categoría:</label>
+          <select id="categoria" name="categoria" required>
+            <option value="">Selecciona una</option>
+            <option value="Cerámica">Cerámica</option>
+            <option value="Textil">Textil</option>
+            <option value="Madera">Madera</option>
+          </select>
+
+          <label for="imagen">URL de la Imagen:</label>
+          <input type="url" id="imagen" name="imagen" required />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-column logo-contact">
+          <img
+            src="/img/Logo-Artesanos.png"
+            alt="Logo Artesanos Unidos"
+            class="logo"
+          />
+          <div class="contact-section">
+            <p><strong>Contáctanos</strong></p>
+            <p><a href="http://wa.me/+573137700791">📞Número: 3137700791</a></p>
+            <p>Lunes a sábado de 8am a 8pm</p>
+            <p>Domingos y festivos de 8am a 6pm</p>
+            <p>✉️ contactanos@artesanosunidos.com</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>NUESTRAS ARTESANÍAS</h4>
+          <ul>
+            <li><a href="#">Tapicería</a></li>
+            <li><a href="#">Maderería</a></li>
+            <li><a href="#">Cerámica</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>ARTÍCULOS DE INTERÉS</h4>
+          <ul>
+            <li><a href="#">Esculturas</a></li>
+            <li><a href="#">Centros de Mesa</a></li>
+            <li><a href="#">Tapices</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>ACERCA DE NOSOTROS</h4>
+          <ul>
+            <li><a href="#">Contáctenos</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política Tratamientos de datos</a></li>
+            <li><a href="#">Promociones</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Cierre que faltaba -->
+      <div class="contenedor-footer">
+        <p>© 2025 Artesanos Unidos Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
