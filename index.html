@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artesanos Unidos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/Logo-White-Hor.png" alt="Artesanos Unidos Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#mis-productos">Mis Productos</a></li>
+          <li><a href="#categoria1">Café</a></li>
+          <li><a href="#categoria2">Artesanías</a></li>
+          <li><a href="#categoria3">Accesorios</a></li>
+          <li><a href="publicar.html">Publicar</a></li>
+          <li>
+            <a href="carrito.html" id="cart-icon"
+              >🛒 (<span id="cart-count">0</span>)</a
+            >
+          </li>
+          <button id="modo-oscuro-toggle">🌓</button>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Productos hechos con el corazón</h1>
+        <br />
+        <div class="video-container">
+          <video autoplay muted loop>
+            <source
+              src="/vid/Banner-Principal_Desktop-1920-x-1092-pxESP.mp4"
+              type="video/mp4"
+              controls
+            />
+            Tu navegador no soporta el video.
+          </video>
+        </div>
+        <br />
+        <p>Descubre lo mejor del arte colombiano en cada producto</p>
+        <p>
+          Apoya a nuestros artesanos y lleva un pedacito de Colombia contigo
+        </p>
+      </section>
+
+      <section id="mis-productos" class="categoria">
+        <h2>Mis Productos</h2>
+        <div class="productos"></div>
+      </section>
+
+      <section class="categoria" id="categoria1">
+        <h2>Café</h2>
+        <div class="productos">
+          <div class="producto">
+            <img src="img/Ceramica Vaso 2.jpg" alt="Café Orgánico" />
+            <h3>Café Orgánico</h3>
+            <p>100% orgánico y cultivado en Colombia</p>
+            <p>$15.000</p>
+            <br />
+            <button onclick="addToCart('Café Orgánico')">Agregar</button>
+          </div>
+          <div class="producto">
+            <img src="img/ceramica.jpg" alt="Café Tostado" />
+            <h3>Café Tostado</h3>
+            <p>Tueste perfecto para un sabor único</p>
+            <p>$18.000</p>
+            <br />
+            <button onclick="addToCart('Café Tostado')">Agregar</button>
+          </div>
+          <div class="producto">
+            <img src="img/Lampara madera.jpg" alt="Café Molido" />
+            <h3>Café Molido</h3>
+            <p>Listo para preparar tu bebida favorita</p>
+            <p>$14.000</p>
+            <br />
+            <button onclick="addToCart('Café Molido')">Agregar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="categoria" id="categoria2">
+        <h2>Artesanías</h2>
+        <div class="productos">
+          <div class="producto">
+            <img src="img/ceramica1.jpg" alt="Jarrón artesanal" />
+            <h3>Jarrón artesanal</h3>
+            <p>Hecho a mano con técnicas tradicionales</p>
+            <p>$32.000</p>
+            <br />
+            <button onclick="addToCart('Jarrón artesanal')">Agregar</button>
+          </div>
+          <div class="producto">
+            <img src="img/ceramica2.jpg" alt="Tela tejida" />
+            <h3>Tela tejida</h3>
+            <p>Perfecta para decoración o manualidades</p>
+            <p>$45.000</p>
+            <br />
+            <button onclick="addToCart('Tela tejida')">Agregar</button>
+          </div>
+          <div class="producto">
+            <img src="img/ceramica3.jpeg" alt="Figura decorativa" />
+            <h3>Figura decorativa</h3>
+            <p>Un toque especial para tu hogar</p>
+            <p>$28.000</p>
+            <br />
+            <button onclick="addToCart('Figura decorativa')">Agregar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="categoria" id="categoria3">
+        <h2>Accesorios</h2>
+        <div class="productos">
+          <div class="producto">
+            <img src="img/madera1.jpeg" alt="Collar artesanal" />
+            <h3>Collar artesanal</h3>
+            <p>Hecho a mano con materiales naturales</p>
+            <p>$22.000</p>
+            <br />
+            <button onclick="addToCart('Collar artesanal')">Agregar</button>
+          </div>
+          <div class="producto">
+            <img src="img/madera2.jpeg" alt="Pulsera tejida" />
+            <h3>Pulsera tejida</h3>
+            <p>Diseño único y colorido</p>
+            <p>$16.000</p>
+            <br />
+            <button onclick="addToCart('Pulsera tejida')">Agregar</button>
+          </div>
+          <div class="producto">
+            <img src="img/madera3.jpeg" alt="Sombrero artesanal" />
+            <h3>Sombrero artesanal</h3>
+            <p>Protección y estilo en un solo producto</p>
+            <p>$30.000</p>
+            <br />
+            <button onclick="addToCart('Sombrero artesanal')">Agregar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-column logo-contact">
+          <img
+            src="img/Logo-Artesanos.png"
+            alt="Logo Artesanos Unidos"
+            class="logo"
+          />
+          <div class="contact-section">
+            <p><strong>Contáctanos</strong></p>
+            <p><a href="http://wa.me/+573137700791">📞Número: 3137700791</a></p>
+            <p>Lunes a sábado de 8am a 8pm</p>
+            <p>Domingos y festivos de 8am a 6pm</p>
+            <p>✉️ contactanos@artesanosunidos.com</p>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>NUESTRAS ARTESANÍAS</h4>
+          <ul>
+            <li><a href="#">Tapicería</a></li>
+            <li><a href="#">Maderería</a></li>
+            <li><a href="#">Cerámica</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>ARTÍCULOS DE INTERÉS</h4>
+          <ul>
+            <li><a href="#">Esculturas</a></li>
+            <li><a href="#">Centros de Mesa</a></li>
+            <li><a href="#">Tapices</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>ACERCA DE NOSOTROS</h4>
+          <ul>
+            <li><a href="#">Contáctenos</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política Tratamientos de datos</a></li>
+            <li><a href="#">Promociones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="contenedor-footer">
+        <p>© 2025 Artesanos Unidos Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carrito de Compras - Artesanos Unidos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/Logo-White-Hor.png" alt="Artesanos Unidos Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Mis Productos</a></li>
+          <li><a href="#categoria1">Café</a></li>
+          <li><a href="#categoria2">Artesanías</a></li>
+          <li><a href="#categoria3">Accesorios</a></li>
+          <li><a href="publicar.html">Publicar</a></li>
+          <li>
+            <a href="carrito.html" id="cart-icon"
+              >🛒 (<span id="cart-count">0</span>)</a
+            >
+          </li>
+          <button id="modo-oscuro-toggle">🌓</button>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="categoria">
+      <h2>Mi Carrito</h2>
+
+      <div>
+        <button id="vaciar-carrito" class="producto button">
+          🧹 Vaciar carrito
+        </button>
+      </div>
+
+      <div id="carrito-contenido" class="productos"></div>
+
+      <div id="total-carrito">Total: $0</div>
+    </main>
+
+    <footer class="footer">
+      <div class="contenedor-footer">
+        <p>© 2025 Artesanos Unidos</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

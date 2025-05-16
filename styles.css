@@ -1,0 +1,383 @@
+/* styles.css */
+
+:root {
+  --color-principal: #6b2f1d;
+  --color-secundario: #c69c6d;
+  --color-fondo: #f7f1eb;
+  --color-texto: #3a2b27;
+  --color-blanco: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+header {
+  background-color: var(--color-principal);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-blanco);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--color-blanco);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--color-secundario);
+}
+
+.hero {
+  text-align: center;
+  padding: 1rem 8rem;
+  background: linear-gradient(
+    135deg,
+    var(--color-secundario),
+    var(--color-fondo)
+  );
+  color: var(--color-principal);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.categoria {
+  padding: 2rem;
+}
+
+.categoria h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-principal);
+  margin-bottom: 1.5rem;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.producto {
+  background-color: var(--color-blanco);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+  width: 60%;
+  height: 60%;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.producto p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: var(--color-secundario);
+}
+
+.producto button {
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container video {
+  max-width: 80%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--color-principal);
+  color: var(--color-blanco);
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #6b2f1d;
+  padding: 10px 0px;
+  color: white;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 180px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.categoria2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f0e8;
+  padding: 40px 20px;
+}
+
+.formulario-producto {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.categoria2 h2 {
+  color: #4e2a1f;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.formulario-producto label {
+  font-weight: bold;
+  color: #4e2a1f;
+  margin-bottom: 5px;
+}
+
+.formulario-producto input[type="text"],
+.formulario-producto input[type="number"],
+.formulario-producto select,
+.formulario-producto textarea,
+.formulario-producto input[type="file"] {
+  padding: 10px;
+  border: 2px solid #bda89c;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fdf7f2;
+  transition: border-color 0.3s;
+}
+
+.formulario-producto input:focus,
+.formulario-producto select:focus,
+.formulario-producto textarea:focus {
+  border-color: #8d5a44;
+  outline: none;
+}
+
+.formulario-producto button {
+  background-color: #4e2a1f;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-producto button:hover {
+  background-color: #5a2f1c;
+}
+
+.total-carrito {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: var(--color-principal);
+  align-items: center;
+}
+
+.producto button {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.modo-oscuro-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+body.modo-oscuro {
+  background-color: #1f1f1f;
+  color: #f0e7dc;
+}
+
+body.modo-oscuro header,
+body.modo-oscuro footer {
+  background-color: #2d2d2d;
+  color: #f0e7dc;
+}
+
+body.modo-oscuro .producto {
+  background-color: #2c2c2c;
+  color: #f0e7dc;
+}
+
+body.modo-oscuro .producto p {
+  color: #c69c6d;
+}
+
+body.modo-oscuro .producto button {
+  background-color: #c69c6d;
+  color: #1f1f1f;
+}
+
+body.modo-oscuro .producto button:hover {
+  background-color: #8d6e50;
+  color: #fff;
+}
+
+body.modo-oscuro .formulario-producto {
+  background-color: #2a2a2a;
+  color: #f0e7dc;
+}
+
+body.modo-oscuro input,
+body.modo-oscuro select,
+body.modo-oscuro textarea {
+  background-color: #3b3b3b;
+  color: #fff;
+  border-color: #666;
+}
+
+body.modo-oscuro input:focus,
+body.modo-oscuro select:focus,
+body.modo-oscuro textarea:focus {
+  border-color: #aaa;
+}
+
+body.modo-oscuro .nav-links li a:hover {
+  color: #c69c6d;
+}
